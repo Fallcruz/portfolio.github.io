@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rizky Khoiruddin</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img class="logoPic" src="img/round-profile.png" alt="logo">
+                <h4 class="rk">RK</h4>
+            </div>
+            <div class="menuNavbar">
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon">
+                <img class="menu-icon" src="img/menu-icon.png" alt="" onclick="toogleMenu()">
+            </div>
+        </div>
+        <div class="row-profile">
+            <div class="col-profileText">
+                <h3>RIZKY KHOIRUDDIN</h3>
+                <h2>FRONTEND DEVELOPER</h2>
+                <p>
+                    I implement user interface design and solve user problems with HTML, CSS and Javascript. I have 1 years of making products that solve user problems and implementing responsive website.
+                </p>
+                <a 
+                    class="btn-contactme" 
+                    href=""
+                    role="button">
+                    Contact me
+                </a>
+            </div>
+            <div class="col-profileImage">
+                <img class="imgProfile" src="img/pic-profile.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var click = 0;
+        function toogleMenu(){
+            if (click % 2 == 0){
+                document.getElementById("menuList").style.display = "block";
+                click += 1;
+            } else {
+                document.getElementById("menuList").style.display = "none";
+                click += 1;
+            }
+        }
+    </script>
+</body>
+</html>
