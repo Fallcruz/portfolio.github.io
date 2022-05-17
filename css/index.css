@@ -132,6 +132,39 @@
     justify-content: center;
 }
 
+.row-skill {
+    align-items: center;
+    text-align: center; 
+}
+.smallLine {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+}
+.row-skill .headline {
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 500;
+}
+.row-skill .cardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.094);
+    min-height: 100px;
+    border-radius: 20px;
+    margin: 25px auto;
+}
+.row-skill .cardIcon a {
+    text-decoration: none;
+}
+.row-skill .cardIcon img {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
 @media only screen and (max-width:800px) {
     .menuNavbar ul {
         display: none;
@@ -186,5 +219,11 @@
     .col-profileText .btn-contactme {
         font-size: 14px;
         padding: 10px 16px;
+    }
+    .row-skill .cardIcon {
+        display: inline-block;
+    }
+    .row-skill .cardIcon img {
+        margin: 20px 15px;
     }
 }
