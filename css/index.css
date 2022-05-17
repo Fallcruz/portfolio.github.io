@@ -133,10 +133,11 @@
     width: 350px;
     justify-content: center;
 }
-
-.row-skill {
-    align-items: center;
-    text-align: center; 
+.headline {
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 500;
 }
 .smallLine {
     width: 30px;
@@ -144,14 +145,17 @@
     background-color: white;
     margin: 10px auto;
 }
-.row-skill .headline {
-    color: var(--white);
-    font-family: 'Inter';
-    font-size: 22px;
-    font-weight: 500;
+.smallBox {
+    height: 12px;
+}
+.row-skill {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
 }
 .row-skill .cardIcon {
     display: flex;
+    width: 90%;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.094);
@@ -165,6 +169,57 @@
 .row-skill .cardIcon img {
     height: 50px;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.row-project {
+    align-items: center;
+    text-align: center; 
+}
+.row-project .row-listProject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+}
+.row-listProject .col-project {
+    flex-basis: 28%;
+    min-height: 450px;
+    margin: 0 16px 16px 16px;
+}
+.row-listProject .col-project img {
+    width: 100%;
+    border-radius: 30px;
+    filter: brightness(80%);
+}
+.row-listProject .col-project img:hover {
+    filter: brightness(100%);
+}
+.row-listProject .col-project h5 {
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+.row-listProject .col-project .btn-viewlink {
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.row-listProject .col-project a {
+    color: var(--white);
+    border: 1.5px solid var(--soft-black);
+    background-color: var(--light-blue);
+    padding: 10px 20px;
+}
+.row-listProject .col-project a:hover {
+    color: var(--white);
+    border: 1.5px solid white;
+    background-color: var(--soft-black);
+    padding: 10px 20px;
 }
 
 @media only screen and (max-width:700px) {
@@ -223,10 +278,27 @@
         font-size: 14px;
         padding: 10px 16px;
     }
+    .row-skill {
+        margin-bottom: 20px;
+    }
     .row-skill .cardIcon {
         display: inline-block;
+        width: 100%;
     }
     .row-skill .cardIcon img {
         margin: 20px 15px;
+    }
+    .row-project {
+        align-items: center;
+        text-align: center; 
+    }
+    .row-project .row-listProject {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin: 25px auto;
+    }
+    .row-listProject .col-project {
+        margin: 0 16px 26px 16px;
     }
 }

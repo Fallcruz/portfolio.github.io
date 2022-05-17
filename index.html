@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Rizky Khoiruddin</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -69,20 +70,39 @@
             </div>
         </div>
 
+        <div class="row-project">
+            <h3 class="headline">My Projects</h3>
+            <div class="smallLine mx-auto"></div>
+            <div class="row-listProject">
+                <div class="col-project">
+                    <img src="img/sobatkerja-mobile.png" alt="">
+                    <h5>SobatKerja Application</h5>
+                    <div class="smallBox"></div>
+                    <a class="btn-viewlink" href="https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1" target="_blank">
+                    View Source
+                    </a>
+                </div>
+                <div class="col-project">
+                    <img src="img/travi.png" alt="">
+                    <h5>Website Travi (Travel Village)</h5>
+                    <div class="smallBox"></div>
+                    <a class="btn-viewlink" href="https://github.com/Fallcruz/Website-Travi" target="_blank">
+                    View Source
+                    </a>
+                </div>
+                <div class="col-project">
+                    <img src="img/sobatkerja.png" alt="">
+                    <h5>Website SobatKerja</h5>
+                    <div class="smallBox"></div>
+                    <a class="btn-viewlink" href="https://github.com/Fallcruz/Website-SobatKerja" target="_blank">
+                    View Source
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <br><br><br>
     </div>
 
-    <script>
-        var click = 0;
-        function toogleMenu(){
-            if (click % 2 == 0){
-                document.getElementById("menuList").style.display = "block";
-                click += 1;
-            } else {
-                document.getElementById("menuList").style.display = "none";
-                click += 1;
-            }
-        }
-    </script>
 </body>
 </html>
