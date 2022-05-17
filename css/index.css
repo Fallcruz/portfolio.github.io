@@ -5,7 +5,7 @@
     --black: rgba(0, 0, 0, 1);
     --light-blue: rgba(30, 136, 229, 1);
     --soft-black: rgba(32, 32, 32, 1);
-    --light-grey: rgb(169, 169, 169);
+    --light-grey: rgb(177, 177, 177);
     --white: rgba(255, 255, 255, 1);
 }
 
@@ -170,7 +170,7 @@
 @media only screen and (max-width:700px) {
     .menuNavbar ul {
         display: none;
-        width: 72%;
+        width: 95%;
         background-color: var(--light-grey);
         position: absolute;
         top: 85px;
@@ -178,9 +178,9 @@
         border-radius: 0 0 0 40px;
     }
     .menuNavbar ul li {
-        display: block;
+        display: inline-block;
         background-color: var(--light-grey);
-        margin: 20px 20px;
+        margin: 20px 15px;
     }
     .menuNavbar ul li a {
         background-color: var(--light-grey);
