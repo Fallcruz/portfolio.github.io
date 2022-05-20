@@ -7,7 +7,7 @@
     <title>Portfolio - Rizky Khoiruddin</title>
     <link rel="stylesheet" href="/css/index.css">
 </head>
-<body onload="loadSkill(), loadProject(), loadFooter()">
+<body onload="loadFooter()">
     <div class="container">
         <!-- Navbar -->
         <div class="navbar">
@@ -19,8 +19,8 @@
             <!-- Menu Navigasi -->
             <div class="menuNavbar">
                 <ul id="menuList">
-                    <li><a class="active" href="/index.html">Home</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a class="active" href="/pages/about.html">About</a></li>
                     <li><a href="/pages/project.html">Projects</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -33,6 +33,10 @@
 
         <!-- Home Profile -->
         <div class="row-profile">
+            <!-- Column Image -->
+            <div class="col-profileImage">
+                <img class="imgProfile" src="/img/pic-profile.png" alt="">
+            </div>
             <!-- Column Description -->
             <div class="col-profileText">
                 <h3>RIZKY KHOIRUDDIN</h3>
@@ -47,47 +51,13 @@
                     Contact me
                 </a>
             </div>
-            <!-- Column Image -->
-            <div class="col-profileImage">
-                <img class="imgProfile" src="/img/pic-profile.png" alt="">
-            </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="row-skill">
-            <h3 class="headline">My Skills</h3>
-            <div class="smallLine mx-auto"></div>
-            <div class="cardIcon" id="listIcon">
-                <!-- <img src="img/logo-html.png" alt=""> -->
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="row-project" id="project">
-            <h3 class="headline">My Projects</h3>
-            <div class="smallLine mx-auto"></div>
-            <div class="row-listProject" id="listProject">
-                <!-- <div class="col-project">
-                    <img src="img/sobatkerja-mobile.png">
-                    <h5>SobatKerja Application</h5>
-                    <div class="smallBox"></div>
-                    <a class="btn-viewlink" href="https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1" target="_blank">
-                        View Source
-                    </a>
-                </div> -->
-            </div>
         </div>
     </div>
-
     <!-- Footer -->
     <footer class="row-footer">
         <div class="top-footer">
             <h4 class="rk-footer">RK</h4>
-            <div class="sosmed-footer" id="listSosmed">
-                <!-- <a href="https://www.instagram.com/rizky.khoiruddin/" target="_blank">
-                    <img src="img/instagram.png" alt="" height="30px">
-                </a> -->
-            </div>
+            <div class="sosmed-footer" id="listSosmed"></div>
         </div>
         <div class="bottom-footer">
             <h5 class="copyright">© Rizky Khoiruddin</h5>

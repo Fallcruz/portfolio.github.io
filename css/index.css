@@ -147,6 +147,9 @@ body {
     font-size: 22px;
     font-weight: 500;
 }
+.container ul li a.active {
+    color: var(--light-blue);
+}
 .smallLine {
     width: 30px;
     height: 2px;
@@ -260,6 +263,9 @@ body {
     text-align: end;
     align-items: center;
     justify-content: end;
+}
+.top-footer .sosmed-footer a img {
+    height: 30px;
 }
 .top-footer .sosmed-footer a {
     padding-left: 5%;
