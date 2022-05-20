@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Rizky Khoiruddin</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
 </head>
-<body>
+<body onload="loadSkill()">
     <div class="container">
         <!-- Navbar -->
         <div class="navbar">
@@ -58,13 +57,13 @@
         <div class="row-skill">
             <h3 class="headline">My Skills</h3>
             <div class="smallLine mx-auto"></div>
-            <div class="cardIcon">
-                <img src="img/logo-html.png" alt="">
+            <div class="cardIcon" id="listIcon">
+                <!-- <img src="img/logo-html.png" alt="">
                 <img src="img/logo-css.png" alt="">
                 <img src="img/logo-javascript.png" alt="">
                 <img src="img/logo-cplus2.png" alt="">
                 <img src="img/logo-java.png" alt="">
-                <img src="img/logo-python.png" alt="">
+                <img src="img/logo-python.png" alt=""> -->
             </div>
         </div>
 
@@ -138,9 +137,23 @@
         </div>
         <div class="bottom-footer">
             <h5 class="copyright">© Rizky Khoiruddin</h5>
+            <div id="div1" style="color: white;"></div>
         </div>
         <br>
     </footer>
 
+    <!-- JS -->
+    <script src="js/index.js"></script>
+    <script>
+        function loadSkill(){
+            var data_icon = ['/img/logo-html.png','/img/logo-css.png','/img/logo-javascript.png','/img/logo-cplus2.png','/img/logo-java.png','/img/logo-python.png'
+            ]
+            var cardIcon = document.getElementById('listIcon');
+            for (var i = 0; i < data_icon.length; i++){
+                var item = `<img src=${data_icon[i]}>`;
+                cardIcon.innerHTML += item;
+            }
+        }
+    </script>
 </body>
 </html>
