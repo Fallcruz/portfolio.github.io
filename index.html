@@ -7,7 +7,7 @@
     <title>Portfolio - Rizky Khoiruddin</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body onload="loadSkill()">
+<body onload="loadSkill(), loadProject()">
     <div class="container">
         <!-- Navbar -->
         <div class="navbar">
@@ -58,12 +58,7 @@
             <h3 class="headline">My Skills</h3>
             <div class="smallLine mx-auto"></div>
             <div class="cardIcon" id="listIcon">
-                <!-- <img src="img/logo-html.png" alt="">
-                <img src="img/logo-css.png" alt="">
-                <img src="img/logo-javascript.png" alt="">
-                <img src="img/logo-cplus2.png" alt="">
-                <img src="img/logo-java.png" alt="">
-                <img src="img/logo-python.png" alt=""> -->
+                <!-- <img src="img/logo-html.png" alt=""> -->
             </div>
         </div>
 
@@ -71,47 +66,15 @@
         <div class="row-project" id="project">
             <h3 class="headline">My Projects</h3>
             <div class="smallLine mx-auto"></div>
-            <div class="row-listProject">
-                <div class="col-project">
-                    <img src="img/sobatkerja-mobile.png" alt="">
+            <div class="row-listProject" id="listProject">
+                <!-- <div class="col-project">
+                    <img src="img/sobatkerja-mobile.png">
                     <h5>SobatKerja Application</h5>
                     <div class="smallBox"></div>
                     <a class="btn-viewlink" href="https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1" target="_blank">
-                    View Source
+                        View Source
                     </a>
-                </div>
-                <div class="col-project">
-                    <img src="img/travi.png" alt="">
-                    <h5>Website Travi (Travel Village)</h5>
-                    <div class="smallBox"></div>
-                    <a class="btn-viewlink" href="https://github.com/Fallcruz/Website-Travi" target="_blank">
-                    View Source
-                    </a>
-                </div>
-                <div class="col-project">
-                    <img src="img/sobatkerja.png" alt="">
-                    <h5>Website SobatKerja</h5>
-                    <div class="smallBox"></div>
-                    <a class="btn-viewlink" href="https://github.com/Fallcruz/Website-SobatKerja" target="_blank">
-                    View Source
-                    </a>
-                </div>
-                <div class="col-project">
-                    <img src="img/iflab.png" alt="">
-                    <h5>Redesign Website IFLAB</h5>
-                    <div class="smallBox"></div>
-                    <a class="btn-viewlink" href="https://www.figma.com/file/MakC0a10rb0KDnEXzyLa11/Website-IFLAB?node-id=0%3A1" target="_blank">
-                    View Source
-                    </a>
-                </div>
-                <div class="col-project">
-                    <img src="img/whatsapp.png" alt="">
-                    <h5>Redesign WhatsApp Application</h5>
-                    <div class="smallBox"></div>
-                    <a class="btn-viewlink" href="https://www.figma.com/file/rvGNsdA1vtqPQkg4px151T/WhatsApp?node-id=0%3A1" target="_blank">
-                    View Source
-                    </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -137,23 +100,11 @@
         </div>
         <div class="bottom-footer">
             <h5 class="copyright">© Rizky Khoiruddin</h5>
-            <div id="div1" style="color: white;"></div>
         </div>
         <br>
     </footer>
 
     <!-- JS -->
     <script src="js/index.js"></script>
-    <script>
-        function loadSkill(){
-            var data_icon = ['/img/logo-html.png','/img/logo-css.png','/img/logo-javascript.png','/img/logo-cplus2.png','/img/logo-java.png','/img/logo-python.png'
-            ]
-            var cardIcon = document.getElementById('listIcon');
-            for (var i = 0; i < data_icon.length; i++){
-                var item = `<img src=${data_icon[i]}>`;
-                cardIcon.innerHTML += item;
-            }
-        }
-    </script>
 </body>
 </html>

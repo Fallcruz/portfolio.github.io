@@ -204,7 +204,7 @@ body {
 .row-listProject .col-project img {
     width: 100%;
     border-radius: 30px;
-    filter: brightness(80%);
+    filter: brightness(85%);
 }
 .row-listProject .col-project img:hover {
     filter: brightness(100%);
