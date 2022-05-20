@@ -12,10 +12,10 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Inter';
 }
 body {
     background-color: var(--soft-black);
+    font-family: 'Inter';
 }
 /* All Content */
 .container {
@@ -32,7 +32,6 @@ body {
     padding: 1% 0;
     display: flex;
 }
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -162,11 +161,12 @@ body {
 .row-skill {
     align-items: center;
     text-align: center;
-    margin-bottom: 60px;
+    padding-top: 10px;
+    margin-bottom: 40px;
 }
 .row-skill .cardIcon {
     display: flex;
-    width: 90%;
+    width: 93%;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.094);
@@ -185,7 +185,8 @@ body {
 /* Section List Projects */
 .row-project {
     align-items: center;
-    text-align: center; 
+    text-align: center;
+    padding: 20px 0;
 }
 .row-project .row-listProject {
     display: flex;
