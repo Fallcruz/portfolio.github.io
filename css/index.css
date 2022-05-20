@@ -13,6 +13,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter';
+}
+body {
     background-color: var(--soft-black);
 }
 .container {
@@ -222,11 +224,48 @@
     padding: 10px 20px;
 }
 
+.row-footer {
+    padding: 2% 4%;
+    margin: 0;
+    background-color: var(--black);
+}
+.row-footer .top-footer {
+    display: flex;
+}
+.top-footer .rk-footer {
+    color: var(--white);
+    font-family: 'Rakkas';
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: -7.60px;
+    text-decoration: none;
+}
+.top-footer .sosmed-footer {
+    display: flex;
+    flex: 1;
+    text-align: end;
+    align-items: center;
+    justify-content: end;
+}
+.top-footer .sosmed-footer a {
+    padding-left: 5%;
+}
+.bottom-footer {
+    padding-top: 1%;
+}
+.bottom-footer .copyright{
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+}
+
 @media only screen and (max-width:700px) {
     .menuNavbar ul {
         display: none;
         width: 95%;
-        background-color: var(--light-grey);
+        background-color: var(--soft-black);
+        box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 0px, rgba(255, 255, 255, 0.24) 0px 2px 2px;
         position: absolute;
         top: 85px;
         right: 0;
@@ -234,15 +273,12 @@
     }
     .menuNavbar ul li {
         display: inline-block;
-        background-color: var(--light-grey);
         margin: 20px 15px;
     }
     .menuNavbar ul li a {
-        background-color: var(--light-grey);
-        color: var(--soft-black);
+        color: var(--white);
     }
     .menuNavbar ul li a:hover {
-        background-color: var(--light-grey);
         color: var(--light-blue);
     }
     .menu-icon {
@@ -268,7 +304,7 @@
         margin-bottom: 16px;
     }
     .col-profileText h2 {
-        font-size: 34px;
+        font-size: 35px;
         margin-bottom: 16px;
     }
     .col-profileText p {
@@ -300,5 +336,16 @@
     }
     .row-listProject .col-project {
         margin: 0 16px 26px 16px;
+    }
+    .row-listProject .col-project img {
+        filter: brightness(100%);
+    }
+    .row-footer {
+        padding: 3% 6%;
+        margin: 0;
+        background-color: var(--black);
+    }
+    .top-footer .sosmed-footer a {
+        padding-left: 8%;
     }
 }
