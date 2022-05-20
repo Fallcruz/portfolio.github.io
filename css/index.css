@@ -278,6 +278,7 @@ body {
     /* Navigasi Atas */
     .menuNavbar ul {
         display: none;
+        padding: 1% 0;
         text-align: center;
         width: 95%;
         background-color: var(--soft-black);
@@ -289,6 +290,7 @@ body {
     }
     .menuNavbar ul li {
         display: inline-block;
+        font-size: 16px;
         margin: 20px 3.5%;
     }
     .menuNavbar ul li a {
@@ -326,10 +328,10 @@ body {
         margin-bottom: 16px;
     }
     .col-profileText p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .col-profileText .btn-contactme {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 16px;
     }
 
@@ -339,7 +341,7 @@ body {
     }
     .row-skill .cardIcon {
         display: inline-block;
-        width: 100%;
+        width: 93%;
     }
     .row-skill .cardIcon img {
         margin: 20px 15px;
@@ -371,7 +373,7 @@ body {
         font-size: 45px;
     }
     .top-footer .sosmed-footer a img {
-        height: 24px;
+        height: 25px;
     }
     .top-footer .sosmed-footer a {
         padding-left: 8%;
