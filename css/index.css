@@ -16,6 +16,7 @@
 body {
     background-color: var(--soft-black);
     font-family: 'Inter';
+    color: var(--white);
 }
 /* All Content */
 .container {

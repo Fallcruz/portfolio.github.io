@@ -22,9 +22,9 @@ function loadSkill(){
 // Generate Projects
 function loadProject(){
     var data_project = [
-        {'src' : 'img/sobatkerja-mobile.png', 'title' : 'SobatKerja Application', 'href' : 'https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1'},
-        {'src' : 'img/travi.png', 'title' : 'Website Travi (Travel Village)', 'href' : 'https://github.com/Fallcruz/Website-Travi'},
         {'src' : 'img/sobatkerja.png', 'title' : 'Website SobatKerja', 'href' : 'https://github.com/Fallcruz/Website-SobatKerja'},
+        {'src' : 'img/travi.png', 'title' : 'Website Travi (Travel Village)', 'href' : 'https://github.com/Fallcruz/Website-Travi'},
+        {'src' : 'img/sobatkerja-mobile.png', 'title' : 'SobatKerja Application', 'href' : 'https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1'},
         {'src' : 'img/iflab.png', 'title' : 'Redesign Website IFLAB', 'href' : 'https://www.figma.com/file/MakC0a10rb0KDnEXzyLa11/Website-IFLAB?node-id=0%3A1'},
         {'src' : 'img/whatsapp.png', 'title' : 'Redesign WhatsApp Application', 'href' : 'https://www.figma.com/file/rvGNsdA1vtqPQkg4px151T/WhatsApp?node-id=0%3A1'},
     ]
