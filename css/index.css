@@ -201,7 +201,6 @@ body {
 }
 .row-listProject .col-project {
     flex-basis: 28%;
-    /* min-height: 450px; */
     padding-bottom: 4%;
     margin: 0 2% 2% 2%;
 }

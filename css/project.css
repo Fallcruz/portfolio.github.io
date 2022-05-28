@@ -92,6 +92,15 @@ body {
     font-size: 28px;
     font-weight: 500;
 }
+.smallLine {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+}
+.smallBox {
+    height: 12px;
+}
 
 /* Section List Projects */
 .row-project {
@@ -174,6 +183,7 @@ body {
 }
 .detail-project .field-detail {
     padding: 2% 2%;
+    margin-bottom: 30px;
 }
 .detail-project .headline-detail {
     font-size: 28px;
@@ -302,33 +312,36 @@ body {
         font-size: 22px;
         margin-bottom: 9%;
     }
+    .row-project .row-listProject {
+        align-items: center;
+        justify-content: center;
+    }
     .row-project .col-project {
-        margin: 3% 0 10% 0;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 4%;
+        margin: 0 4% 8% 4%;
     }
-    .col-project .img-project {
-        flex-basis: 55%;
-    }
-    .row-project .field-project {
-        flex-basis: 45%;
-        padding: 0 0 0 8%;
+    .col-project .img-project img{
+        width: 95%;
     }
     .row-project h3 {
-        font-size: 17px;
+        text-align: center;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 25px;
-        margin-bottom: 30px;
+        margin: 16px 0;
     }
     .row-project p {
         display: none;
     }
     .row-project .btn-viewdetail {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
     }
     .row-project .col-project a {
-        padding: 8px 14px;
+        padding: 10px 20px;
     }
     .row-project .col-project a:hover {
-        padding: 8px 14px;
+        padding: 10px 20px;
     }
 }

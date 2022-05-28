@@ -9,20 +9,24 @@ function toogleMenu(){
         click += 1;
     }
 }
+
 // Generate Projects
+var data_project = [
+    {   'src' : 'img/sobatkerja.png',
+        'src_full' : 'img/sobatkerja-full.png',
+        'title' : 'Website SobatKerja',
+        'slug' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Lara...',
+        'field' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Laravel dan Bootstrap. Website ini belum 100% selesai karena masih dalam tahap pembangunan atau pengembangan.',
+    },
+    {   'src' : 'img/travi.png',
+        'src_full' : 'img/travi-full.png',
+        'title' : 'Website Travi (Travel Village)',
+        'slug' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan me...',
+        'field' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan mereka. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Laravel dan Bootstrap. Website ini sudah 100% selesai tetapi saya tidak mempublishnya.',
+    },
+];
+
 function loadProject(){
-    var data_project = [
-        {   'src' : 'img/sobatkerja.png', 
-            'title' : 'Website SobatKerja',
-            'field' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Lara...',
-            'href' : 'project-detail/web-sobatkerja.html'
-        },
-        {   'src' : 'img/travi.png',
-            'title' : 'Website Travi (Travel Village)',
-            'field' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan me...',
-            'href' : 'https://github.com/Fallcruz/Website-Travi'
-        },
-    ]
     var listProject = document.getElementById('listProject');
     for (var i = 0; i < data_project.length; i++){
         var item = `<div class="col-project">
@@ -31,8 +35,9 @@ function loadProject(){
                         </div>
                         <div class="field-project">
                             <h3>${data_project[i].title}</h3>
-                            <p>${data_project[i].field}</p>
-                            <a class="btn-viewdetail" onclick="viewDetail()">
+                            <p>${data_project[i].slug}</p>
+                            <div class="smallBox"></div>
+                            <a class="btn-viewdetail" onclick="viewDetail(${i})">
                                 View Details
                             </a>
                         </div>
@@ -41,16 +46,17 @@ function loadProject(){
     }
 }
 
-function viewDetail(){
+function viewDetail(index){
     document.getElementById("row-project").style.display = "none";
     document.getElementById("detail-project").style.display = "block";
-
+    document.getElementById("img-project").src = data_project[index].src_full;
+    document.getElementById("headline-detail") = data_project[index].title;
+    document.getElementById("text-detail").value = data_project[index].field;
 }
 
 function viewProject(){
     document.getElementById("detail-project").style.display = "none";
     document.getElementById("row-project").style.display = "block";
-
 }
 
 // Generate Sosmed Footer
