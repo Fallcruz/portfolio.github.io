@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Rizky Khoiruddin</title>
-    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="/css/project.css">
 </head>
-<body onload="loadProject(), loadFooter()">
+<body onload="loadFooter()">
     <div class="container">
         <!-- Navbar -->
         <div class="navbar">
             <!-- Logo -->
             <div class="logo">
-                <img class="logoPic" src="img/round-profile.png" alt="logo">
+                <img class="logoPic" src="/img/round-profile.png" alt="logo">
                 <h4 class="rk">RK</h4>
             </div>
             <!-- Menu Navigasi -->
@@ -21,30 +21,24 @@
                 <ul id="menuList">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="project.html">Projects</a></li>
+                    <li><a class="active" href="/project.html">Projects</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
             <!-- Toogle Menu -->
             <div class="menu-icon">
-                <img class="menu-icon" src="img/menu-icon.png" alt="" onclick="toogleMenu()">
+                <img class="menu-icon" src="/img/menu-icon.png" alt="" onclick="toogleMenu()">
             </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="row-project">
-            <h3 class="headline">My Projects</h3>
-            <div class="row-ListProject" id="listProject"></div>
         </div>
 
         <!-- Detail Project -->
-        <div class="detail-project" style="display: none;">
-            <img class="back-icon" src="img/arrow-left.png">
-            <div class="img-project">
-                <img src="img/sobatkerja-full.png" alt="">
-            </div>
+        <div class="detail-project">
+            <img class="back-icon" src="/img/arrow-left.png">
+            <a class="img-project" href="/project.html">
+                <img src="/img/sobatkerja-full.png" alt="">
+            </a>
             <div class="field-detail">
-                <h3 class="headline-detail">My Projects</h3>
+                <h3 class="headline-detail"><a href="/project.html">My Projects</a></h3>
                 <a href="" onclick=""></a>
             </div>
         </div>

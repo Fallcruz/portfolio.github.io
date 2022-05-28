@@ -149,6 +149,30 @@ body {
     padding: 10px 20px;
 }
 
+/* Detail Project */
+.detail-project {
+    padding: 20px 0;
+}
+.detail-project .back-icon {
+    margin-left: 10px;
+}
+.detail-project img.back-icon {
+    width: 30px;
+    cursor: pointer;
+}
+.detail-project .img-project {
+    display: block;
+    height: 300px;
+    margin: 20px 0;
+}
+.detail-project .img-project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-position: top;
+    object-fit: cover;
+}
+
 /* Section Footer */
 .row-footer {
     padding: 2% 4%;

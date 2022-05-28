@@ -15,7 +15,7 @@ function loadProject(){
         {   'src' : 'img/sobatkerja.png', 
             'title' : 'Website SobatKerja',
             'field' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Lara...',
-            'href' : 'https://github.com/Fallcruz/Website-SobatKerja'
+            'href' : 'project-detail/web-sobatkerja.html'
         },
         {   'src' : 'img/travi.png',
             'title' : 'Website Travi (Travel Village)',
@@ -32,7 +32,7 @@ function loadProject(){
                         <div class="field-project">
                             <h3>${data_project[i].title}</h3>
                             <p>${data_project[i].field}</p>
-                            <a class="btn-viewdetail" href=${data_project[i].href} target="_blank">
+                            <a class="btn-viewdetail" href="${data_project[i].href}">
                                 View Details
                             </a>
                         </div>
