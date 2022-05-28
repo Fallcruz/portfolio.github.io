@@ -32,7 +32,7 @@ function loadProject(){
                         <div class="field-project">
                             <h3>${data_project[i].title}</h3>
                             <p>${data_project[i].field}</p>
-                            <a class="btn-viewdetail" href="${data_project[i].href}">
+                            <a class="btn-viewdetail" onclick="viewDetail()">
                                 View Details
                             </a>
                         </div>
@@ -40,6 +40,19 @@ function loadProject(){
         listProject.innerHTML += item;
     }
 }
+
+function viewDetail(){
+    document.getElementById("row-project").style.display = "none";
+    document.getElementById("detail-project").style.display = "block";
+
+}
+
+function viewProject(){
+    document.getElementById("detail-project").style.display = "none";
+    document.getElementById("row-project").style.display = "block";
+
+}
+
 // Generate Sosmed Footer
 function loadFooter(){
     var data_sosmed = [

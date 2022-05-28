@@ -135,6 +135,7 @@ body {
     font-weight: 400;
     border-radius: 10px;
     text-decoration: none;
+    cursor: pointer;
 }
 .row-project .col-project a {
     color: var(--white);
@@ -161,8 +162,7 @@ body {
     cursor: pointer;
 }
 .detail-project .img-project {
-    display: block;
-    height: 300px;
+    height: 400px;
     margin: 20px 0;
 }
 .detail-project .img-project img {
@@ -171,6 +171,21 @@ body {
     border-radius: 20px;
     object-position: top;
     object-fit: cover;
+}
+.detail-project .field-detail {
+    padding: 2% 2%;
+}
+.detail-project .headline-detail {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.detail-project .text-detail {
+    color: var(--primary-grey);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 35px;
 }
 
 /* Section Footer */
