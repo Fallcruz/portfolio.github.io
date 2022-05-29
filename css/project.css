@@ -339,7 +339,8 @@ body {
         justify-content: center;
     }
     .row-project .col-project {
-        display: inline-block;
+        /* display: inline-block; */
+        flex-direction: column;
         text-align: center;
         padding-bottom: 4%;
         margin: 0 4% 8% 4%;
