@@ -17,12 +17,14 @@ var data_project = [
         'title' : 'Website SobatKerja',
         'slug' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Lara...',
         'field' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Laravel dan Bootstrap. Website ini belum 100% selesai karena masih dalam tahap pembangunan atau pengembangan.',
+        'href' : 'https://github.com/Fallcruz/Website-SobatKerja',
     },
     {   'src' : 'img/travi.png',
         'src_full' : 'img/travi-full.png',
         'title' : 'Website Travi (Travel Village)',
         'slug' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan me...',
         'field' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan mereka. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Laravel dan Bootstrap. Website ini sudah 100% selesai tetapi saya tidak mempublishnya.',
+        'href' : 'https://github.com/Fallcruz/Website-Travi',
     },
 ];
 
@@ -50,8 +52,9 @@ function viewDetail(index){
     document.getElementById("row-project").style.display = "none";
     document.getElementById("detail-project").style.display = "block";
     document.getElementById("img-project").src = data_project[index].src_full;
-    document.getElementById("headline-detail") = data_project[index].title;
-    document.getElementById("text-detail").value = data_project[index].field;
+    document.getElementById("headline-detail").innerHTML = data_project[index].title;
+    document.getElementById("text-detail").innerHTML = data_project[index].field;
+    document.getElementById("btn-viewlink").href = data_project[index].href;
 }
 
 function viewProject(){
