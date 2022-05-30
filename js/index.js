@@ -33,10 +33,6 @@ function loadProject(){
         var item = `<div class="col-project">
                         <img src=${data_project[i].src}>
                         <h5>${data_project[i].title}</h5>
-                        <div class="smallBox"></div>
-                        <a class="btn-viewlink" href=${data_project[i].href} target="_blank">
-                            View Source
-                        </a>
                     </div>`;
         listProject.innerHTML += item;
     }

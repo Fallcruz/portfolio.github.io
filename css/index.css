@@ -190,19 +190,18 @@ body {
 .row-project {
     align-items: center;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 60px 0;
 }
 .row-project .row-listProject {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 25px auto;
+    margin: 25px auto 10px auto;
 }
 .row-listProject .col-project {
     flex-basis: 28%;
-    padding-bottom: 4%;
-    margin: 0 2% 2% 2%;
+    margin: 0 2% 3% 2%;
 }
 .row-listProject .col-project img {
     width: 100%;
@@ -219,21 +218,21 @@ body {
     font-weight: 400;
     margin: 16px 0;
 }
-.row-listProject .col-project .btn-viewlink {
+.row-project .btn-viewlink {
     color: var(--white);
     font-family: 'Inter';
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     border-radius: 10px;
     text-decoration: none;
 }
-.row-listProject .col-project a {
+.row-project a {
     color: var(--white);
     border: 1.5px solid var(--soft-black);
     background-color: var(--light-blue);
     padding: 10px 20px;
 }
-.row-listProject .col-project a:hover {
+.row-project a:hover {
     color: var(--white);
     border: 1.5px solid white;
     background-color: var(--soft-black);
@@ -361,7 +360,7 @@ body {
         display: inline-block;
         align-items: center;
         justify-content: center;
-        margin: 25px auto;
+        margin: 25px auto 15px auto;
     }
     .row-listProject .col-project {
         margin: 0 4% 6% 4%;
@@ -391,7 +390,7 @@ body {
 
 @media only screen and (max-width:550px) {
     .row-listProject .col-project {
-        margin: 0 4% 8% 4%;
+        margin: 0 4% 10% 4%;
     }
     .row-listProject .col-project img {
         width: 95%;
