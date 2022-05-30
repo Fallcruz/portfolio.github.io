@@ -188,9 +188,21 @@ body {
 .detail-project .headline-detail {
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.detail-project .detail-desc {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 .detail-project .text-detail {
+    color: var(--primary-grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.detail-project .text-tools {
     color: var(--primary-grey);
     font-size: 16px;
     font-weight: 400;
@@ -380,6 +392,9 @@ body {
         font-size: 24px;
     }
     .detail-project .text-detail {
+        font-size: 14px;
+    }
+    .detail-project .text-tools {
         font-size: 14px;
     }
     .detail-project .btn-viewlink {

@@ -17,14 +17,32 @@ var data_project = [
         'title' : 'Website SobatKerja',
         'slug' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Lara...',
         'field' : 'SobatKerja adalah sebuah website yang kami buat untuk mencari pekerjaan dan dapat membuka lowongan pekerjaan. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Laravel dan Bootstrap. Website ini belum 100% selesai karena masih dalam tahap pembangunan atau pengembangan.',
+        'tools' : '• Bahasa Pemrograman : HTML, CSS, Javascript dan PHP<br>• Framework : Laravel dan Bootstrap<br>• Code Editor : Visual Studio Code',
         'href' : 'https://github.com/Fallcruz/Website-SobatKerja',
     },
     {   'src' : 'img/travi.png',
         'src_full' : 'img/travi-full.png',
         'title' : 'Website Travi (Travel Village)',
-        'slug' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan me...',
+        'slug' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keingin...',
         'field' : 'Travi atau Travel Village merupakan sebuah website yang menawarkan paket berwisata di tempat pedesaan yang masih jarang dikunjungi wisatawan. Selain itu, website ini juga membantu travel untuk menawarkan paket wisata sesuai dengan keinginan mereka. Website ini dibangun menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP serta dibantu dengan Framework Laravel dan Bootstrap. Website ini sudah 100% selesai tetapi saya tidak mempublishnya.',
+        'tools' : '• Bahasa Pemrograman : HTML, CSS, Javascript dan PHP<br>• Framework : Laravel dan Bootstrap<br>• Code Editor : Visual Studio Code',
         'href' : 'https://github.com/Fallcruz/Website-Travi',
+    },
+    {   'src' : 'img/sobatkerja-mobile.png',
+        'src_full' : 'img/sobatkerja-mobile-full.png',
+        'title' : 'SobatKerja Application',
+        'slug' : 'SobatKerja Application ini adalah sebuah website SobatKerja namun dalam bentuk aplikasi mobile. Untuk sementara ini saya baru membuat UI nya saja namun untuk kedepannya mungkin saya akan mengimplementasikan UI tersebut menjadi aplika...',
+        'field' : 'SobatKerja Application ini adalah sebuah website SobatKerja namun dalam bentuk aplikasi mobile. Untuk sementara ini saya baru membuat UI nya saja namun untuk kedepannya mungkin saya akan mengimplementasikan UI tersebut menjadi aplikasi mobile.',
+        'tools' : '• Design Tools : Figma',
+        'href' : 'https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1',
+    },
+    {   'src' : 'img/iflab.png',
+        'src_full' : 'img/iflab-full.png',
+        'title' : 'Redesign Website IFLAB',
+        'slug' : 'Redesign Website IFLAB ini adalah sebuah tugas dari Telkom University untuk merubah tampilan yang lebih menarik dari sebelumnya. Redesign ini hanyalah sekedar UI saja dan tidak akan saya implementasikan ke dalam bentuk  website.',
+        'field' : 'Redesign Website IFLAB ini adalah sebuah tugas dari Telkom University untuk merubah tampilan yang lebih menarik dari sebelumnya. Redesign ini hanyalah sekedar UI saja dan tidak akan saya implementasikan ke dalam bentuk  website.',
+        'tools' : '• Design Tools : Figma',
+        'href' : 'https://www.figma.com/file/MakC0a10rb0KDnEXzyLa11/Website-IFLAB?node-id=0%3A1',
     },
 ];
 
@@ -54,6 +72,7 @@ function viewDetail(index){
     document.getElementById("img-project").src = data_project[index].src_full;
     document.getElementById("headline-detail").innerHTML = data_project[index].title;
     document.getElementById("text-detail").innerHTML = data_project[index].field;
+    document.getElementById("text-tools").innerHTML = data_project[index].tools;
     document.getElementById("btn-viewlink").href = data_project[index].href;
 }
 
