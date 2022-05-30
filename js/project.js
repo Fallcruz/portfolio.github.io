@@ -37,7 +37,7 @@ var data_project = [
         'href' : 'https://www.figma.com/file/dUcJCKXDTICvRymKq7dAR8/SobatKerja?node-id=0%3A1',
     },
     {   'src' : 'img/iflab.png',
-        'src_full' : 'img/iflab-full.png',
+        'src_full' : 'img/iflab-web.png',
         'title' : 'Redesign Website IFLAB',
         'slug' : 'Redesign Website IFLAB ini adalah sebuah tugas dari Telkom University untuk merubah tampilan yang lebih menarik dari sebelumnya. Redesign ini hanyalah sekedar UI saja dan tidak akan saya implementasikan ke dalam bentuk  website.',
         'field' : 'Redesign Website IFLAB ini adalah sebuah tugas dari Telkom University untuk merubah tampilan yang lebih menarik dari sebelumnya. Redesign ini hanyalah sekedar UI saja dan tidak akan saya implementasikan ke dalam bentuk  website.',
