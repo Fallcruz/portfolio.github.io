@@ -91,7 +91,7 @@ body {
 .col-profileText {
     flex-basis: 50%;
     margin: 0 70px;
-    /* padding: 50px 0; */
+    padding: 50px 0;
     align-self: center;
 }
 .col-profileText h3 {
