@@ -74,6 +74,7 @@ function viewDetail(index){
     document.getElementById("text-detail").innerHTML = data_project[index].field;
     document.getElementById("text-tools").innerHTML = data_project[index].tools;
     document.getElementById("btn-viewlink").href = data_project[index].href;
+    window.scrollTo(0,0);
 }
 
 function viewProject(){
